@@ -21,7 +21,7 @@ public class ColorChooserController {
 	private TextField blueTextField;
 
 	@FXML
-	private Rectangle colorRectange;
+	private Rectangle colorRectangle;
 
 	@FXML
 	private Slider greenSlider;
@@ -53,7 +53,7 @@ public class ColorChooserController {
 					@Override
 					public void changed(ObservableValue<? extends Number> ov, Number oldValue, Number newValue) {
 						red = newValue.intValue();
-						colorRectange.setFill(Color.rgb(red, green, blue, alpha));
+						colorRectangle.setFill(Color.rgb(red, green, blue, alpha));
 
 					}
 				}
@@ -68,7 +68,7 @@ public class ColorChooserController {
 					@Override
 					public void changed(ObservableValue<? extends Number> ov, Number oldValue, Number newValue) {
 						green = newValue.intValue();
-						colorRectange.setFill(Color.rgb(red, green, blue, alpha));
+						colorRectangle.setFill(Color.rgb(red, green, blue, alpha));
 
 					}
 				}
@@ -83,7 +83,7 @@ public class ColorChooserController {
 					@Override
 					public void changed(ObservableValue<? extends Number> ov, Number oldValue, Number newValue) {
 						blue = newValue.intValue();
-						colorRectange.setFill(Color.rgb(red, green, blue, alpha));
+						colorRectangle.setFill(Color.rgb(red, green, blue, alpha));
 
 					}
 				}
@@ -98,7 +98,7 @@ public class ColorChooserController {
 					@Override
 					public void changed(ObservableValue<? extends Number> ov, Number oldValue, Number newValue) {
 						alpha = newValue.intValue();
-						colorRectange.setFill(Color.rgb(red, green, blue, alpha));
+						colorRectangle.setFill(Color.rgb(red, green, blue, alpha));
 
 					}
 				}
